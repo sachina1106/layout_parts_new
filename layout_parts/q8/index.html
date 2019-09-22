@@ -1,66 +1,82 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="format-detection" content="telephone=no">
-    <title>基本レイアウト・パーツ</title>
-    <link rel="stylesheet" href="http://gizumo-inc.github.io/sample/front-lesson/layout_parts_new/assets/css/reset.css">
-    <link rel="stylesheet" href="http://gizumo-inc.github.io/sample/front-lesson/layout_parts_new/assets/css/base.css">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    <div class="wrapper">
-      <h1 class="title">基本レイアウト・パーツ</h1>
-      <h2 class="headline">
-        <p class="headline__text">Q8. ボタンパーツ ＆ フォーム</p>
-      </h2>
-      <div class="box">
-        <div class="box__inner">
-          <h3 class="box__headline">
-            <p class="box__headline__text">ー Q8-1 ボタンパーツ ー</p>
-          </h3>
-          <!--
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <title>基本レイアウト・パーツ</title>
+  <link rel="stylesheet" href="http://gizumo-inc.github.io/sample/front-lesson/layout_parts_new/assets/css/reset.css">
+  <link rel="stylesheet" href="http://gizumo-inc.github.io/sample/front-lesson/layout_parts_new/assets/css/base.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <h1 class="title">基本レイアウト・パーツ</h1>
+    <h2 class="headline">
+      <p class="headline__text">Q8. ボタンパーツ ＆ フォーム</p>
+    </h2>
+    <div class="box">
+      <div class="box__inner">
+        <h3 class="box__headline">
+          <p class="box__headline__text">ー Q8-1 ボタンパーツ ー</p>
+        </h3>
+        <!--
                この問題は特に難しいプロパティは使いませんので、普通にやれば簡単にボタンを作ることができます。
                ただ、意識していただきたいのは、classを適切にふることで共通化できるスタイルは共通化してしまうということです。
                この問題もHTMLはすでに記述してありますので、ボタンのdivにclassを付与してスタイルを当ててください。
                .q8--btnにfont-sizeを0として指定してあるので必ずボタン部分でfont-sizeを指定してください。
           -->
-          <!-- 回答はここに書いてね -->
-          <!-- すでについてるクラスにはstyleを指定しない。styleをつける場合は自分で新たにクラスをつけること -->
-          <!-- 新たにタグは追加しなくてもできます。 -->
-          <div class="q8 q8--btn">
-            <p class="q8__title">ー small ー</p>
-            <div>common</div>
-            <div>error</div>
-            <div>disabled</div>
-            <div>shadow</div>
-          </div>
-
-          <div class="q8 q8--btn">
-            <p class="q8__title">ー middle ー</p>
-            <div>common</div>
-            <div>error</div>
-            <div>disabled</div>
-            <div>shadow</div>
-          </div>
-
-          <div class="q8 q8--btn">
-            <p class="q8__title">ー large ー</p>
-            <div>common</div>
-            <div>error</div>
-            <div>disabled</div>
-            <div>shadow</div>
-          </div>
-          <!-- 回答はここに書いてね -->
+        <!-- 回答はここに書いてね -->
+        <!-- すでについてるクラスにはstyleを指定しない。styleをつける場合は自分で新たにクラスをつけること -->
+        <!-- 新たにタグは追加しなくてもできます。 -->
+        <div class="q8 q8--btn s-parent">
+          <p class="q8__title">ー small ー</p>
+          <div class="s-common small common-color ">common</div>
+          <div class="s-error small btn-error error-color">error</div>
+          <div class="e-disabled small disabled-color">disabled</div>
+          <div class="s-shadow small shadow-color">shadow</div>
         </div>
 
-        <div class="box__inner">
-          <h3 class="box__headline">
-            <p class="box__headline__text">ー Q8-2 フォーム ー</p>
-          </h3>
-          <!--
+        <div class="q8 q8--btn m-parent">
+          <p class="q8__title">ー middle ー</p>
+          <div class="m-common middle common-color">common</div>
+          <div class="m-error middle btn-error error-color">error</div>
+          <div class="m-disabled middle error-color disabled-color">disabled</div>
+          <div class="m-shadow middle error-color shadow-color">shadow</div>
+        </div>
+
+        <div class="q8 q8--btn l-parent">
+          <p class="q8__title">ー large ー</p>
+          <div class="l-common large common-color">common</div>
+          <div class="l-error large error-color">error</div>
+          <div class="l-disabled large disabled-color">disabled</div>
+          <div class="l-shadow large shadow-color">shadow</div>
+        </div>
+        <!-- 回答はここに書いてね -->
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <!-- フォーム -->
+
+  <div class="box__inner">
+    <h3 class="box__headline">
+      <p class="box__headline__text">ー Q8-2 フォーム ー</p>
+    </h3>
+    <!--
                Webサイトを作る際、コンタクトフォームを実装する機会がとても多くあります。
                ここで使われるタグは一般的にはデザインするのが難しいと言われていますが、それをやらないといけない状況は結構多いです。（簡単リセットされない、:focusや:activeを使う）
                まずは元々タグにあてられているスタイルを解除して、フラットな状態にしてからスタイルを当てていくことが大事です。
@@ -96,14 +112,65 @@
                ・:before
                ・:after
           -->
-          <!-- 回答はここに書いてね -->
-          <!-- すでについてるクラスにはstyleを指定しない。styleを付ける場合は自分で新たにクラスをつけること -->
-          <div class="q8">
-            
+    <!-- 回答はここに書いてね -->
+    <!-- すでについてるクラスにはstyleを指定しない。styleを付ける場合は自分で新たにクラスをつけること -->
+    <div class="q8">
+      <form action="index.html" method="get">
+        <div class="container">
+          <div class="form-title">
+            <h2>
+              <span>Form Exercise</span>
+            </h2>
+            <!-- <div class="title-line"></div> -->
           </div>
-          <!-- 回答はここに書いてね -->
+          <div class="inner-contents">
+
+            <div class="left">
+              <div class="form-name">
+                <label for="name" id="name">名前</label>
+                <input type="text" id="name-input" name="name" required>
+              </div>
+              <div class="gander">
+                <label id="label-gender">性別</label>
+                <input type="radio" name="man" value="1" id="man">男
+                <input type="radio" name="woman" value="2" id="woman">女
+              </div>
+              <div class="from">
+                <label id="label-from">出身</label>
+                <select class="from-select" name="from">
+                  <option value="東京">東京</option>
+                  <option value="埼玉">埼玉</option>
+                  <option value="千葉">千葉</option>
+                  <option value="神奈川">神奈川</option>
+                </select>
+              </div>
+              <div class="form-e-mail">
+                <label id="label-email">Eメール</label>
+                <input type="email" id="email-input" name="email" required>
+              </div>
+              <div class="phone">
+                <label id="label-phone">電話番号</label>
+                <input type="tel" id="tel-input" name="tel">
+              </div>
+              <div class="form-age">
+                <input type="checkbox" id="age" name="age" value="true">20歳以上です
+              </div>
+              <div class="btn">
+                <button type="submit" class="form-btn">送信</button>
+              </div>
+            </div>
+            <div claas="right">
+              <textarea name="comment" placeholder=何かあれば入力してください。></textarea>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </body>
+      </form>
+</body>
+
+</html>
+</div>
+<!-- 回答はここに書いてね -->
+</div>
+</body>
+
 </html>

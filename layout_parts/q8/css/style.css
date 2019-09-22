@@ -2,4 +2,213 @@
 
 /* 回答はここに書いてね */
 
+/* 各サイズ共通css */
+.small {
+  font-size: 16px;
+  border-radius: 3px;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 26px;
+  line-height: 26px;
+  display: inline-block;
+  margin-right: 10px;
+
+}
+
+.middle {
+  font-size: 20px;
+  border-radius: 5px;
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 32px;
+  line-height: 32px;
+  margin-right: 10px;
+
+}
+
+.large {
+  font-size: 24px;
+  border-radius: 7px;
+  display: inline-block;
+  padding-left: 25px;
+  padding-right: 25px;
+  height: 38px;
+  line-height: 38px;
+  margin-right: 10px;
+}
+
+/* 各共通色 */
+.common-color {
+  background: #00bcd4;
+  color: #fff;
+}
+
+.error-color {
+  background: #ff4081;
+  color: #fff;
+}
+
+.disabled-color {
+  background: #e5e5e5;
+  color: #fff;
+}
+
+.shadow-color {
+  background: #fff;
+  color: #222;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, .12);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .12);
+}
+
+/* 親要素にflexをつける */
+.s-parent,
+.m-parent,
+.l-parent {
+  text-align: center;
+}
+
+.form-container {
+  width: 700px;
+  background: #ECF1F2;
+  padding: 20px;
+}
+
+
+/* form */
+.container {
+  background-color: #ECF1F2;
+  width: 700px;
+  margin: 0 auto;
+  padding: 10px 20px 20px 5px;
+  margin-bottom: 100px;
+}
+
+
+
+.inner-contents {
+  display: flex;
+}
+
+
+.left {
+  width: 350px;
+}
+
+.right {
+  width: 350px;
+}
+
+.form-name,
+.gander,
+.from,
+.form-e-mail,
+.phone {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.from-select {
+  height: 26px;
+}
+
+#name,
+#label-gender,
+#label-from,
+#label-email,
+#label-phone {
+  width: 80px;
+  text-align: right;
+}
+
+#name-input,
+#email-input,
+#tel-input,
+.from-select {
+  width: 200px;
+  margin-left: 20px;
+}
+
+
+textarea {
+  width: 350px;
+  height: 200px;
+  resize: none;
+}
+
+
+.form-age {
+  text-align: right;
+  margin-right: 36px;
+}
+
+.form-btn {
+  background-color: #00BCD4;
+  color: #fff;
+  border-radius: 4px;
+  padding: 5px 15px;
+}
+
+.btn {
+  text-align: right;
+  margin-right: 38px;
+  margin-top: 10px;
+}
+
+#name:after,
+#label-email:after {
+  content: "*";
+  color: red;
+}
+
+#age {
+  width: 14px;
+  height: 16px;
+}
+
+#man {
+  margin-left: 20px;
+}
+
+#woman {
+  margin-left: 10px;
+}
+
+
+h2 {
+  overflow: hidden;
+  text-align: left;
+  font-size: 24px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  font-weight: 900;
+}
+
+h2 span {
+  display: inline-block;
+  padding: 0 0.5em;
+  position: relative;
+}
+
+
+h2 span:after {
+  border-top: 1px solid #ccc;
+  ;
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 99em;
+}
+
+h2 span:before {
+  right: 100%;
+}
+
+h2 span:after {
+  left: 100%;
+}
+
+
+
+
 /* 回答はここに書いてね */
