@@ -2,4 +2,92 @@
 
 /* 回答はここに書いてね */
 
+/* Q1 css */
+.clearfix::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+/* 共通css */
+.common {
+  font-size: 16px;
+  width: 225px;
+  box-sizing: border-box;
+}
+
+/* Q2 css */
+.table-parent {
+  display: table;
+}
+
+.table-left {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.table-right {
+  display: table-cell;
+}
+
+.mr-25 {
+  margin-right: 25px;
+}
+
+.ml-25 {
+  margin-left: 25px;
+}
+
+/* Q3 css */
+.inline-parent {
+  text-align: center;
+  font-size: 0;
+}
+
+.inline-child {
+  display: inline-block;
+  vertical-align: middle;
+  width: 225px;
+
+}
+
+/* Q4 css */
+.flex-parent {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+
+/* Q5 css */
+.q5-parent {
+  display: table;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.q5-common {
+  display: table-cell;
+  text-align: left;
+  font-size: 16px;
+
+}
+
+.q5-left {
+  width: 300px;
+}
+
+.ml-50 {
+  margin-left: 50px;
+}
+
+
+
 /* 回答はここに書いてね */
