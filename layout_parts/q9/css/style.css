@@ -2,4 +2,102 @@
 
 /* 回答はここに書いてね */
 
+
+.img-container {
+  width: 500px;
+  margin: 0 auto;
+
+}
+
+.car-img {
+  overflow: hidden;
+  width: 500px;
+  position: relative;
+}
+
+.car-img img {
+  display: block;
+  transition-duration: 0.3s;
+}
+
+.car-img:hover img {
+  transform: scale(1.5);
+  transition-duration: 0.3s;
+  /* filter: brightness(0.5); */
+  /* opacity: 0.8; */
+}
+
+.car-img .img-text {
+  position: absolute;
+  bottom: -112px;
+  position: absolute;
+  width: 500px;
+  transition: all .5s;
+  color: #fff;
+  font-size: 16px;
+  line-height: 16px;
+  margin-left: 5px;
+  padding: 20px;
+  box-sizing: border-box;
+  word-break: break-all;
+}
+
+/* 親要素がhoverした時その子要素につけるcss */
+.car-img:hover .img-text {
+  bottom: 0px;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+}
+
+.loader-container {
+  position: relative;
+  width: 100px;
+  margin: 0 auto;
+  height: 300px;
+}
+
+#loader {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #ecf1f2;
+  box-sizing: border-box;
+  border: 12px solid #00bcd4;
+  /* 右,左、下の色を消す */
+  border-right-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  /* 一秒毎にくるくる回るアニメーション */
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    /* opacity: 0.2; */
+  }
+
+  50% {
+    transform: rotate(180deg);
+    /* opacity: 1.0; */
+  }
+
+  100% {
+    transform: rotate(360deg);
+    /* opacity: 0.2; */
+  }
+}
+
+.circle-box {
+  background: #fff;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  top: 10px;
+  position: absolute;
+  left: 10px;
+  box-sizing: border-box;
+}
+
+
 /* 回答はここに書いてね */
