@@ -34,26 +34,26 @@
         <!-- 新たにタグは追加しなくてもできます。 -->
         <div class="q8 q8--btn s-parent">
           <p class="q8__title">ー small ー</p>
-          <div class="s-common small common-color ">common</div>
-          <div class="s-error small btn-error error-color">error</div>
-          <div class="e-disabled small disabled-color">disabled</div>
-          <div class="s-shadow small shadow-color">shadow</div>
+          <div class="small common-color ">common</div>
+          <div class="small btn-error error-color">error</div>
+          <div class="small disabled-color">disabled</div>
+          <div class="small shadow-color">shadow</div>
         </div>
 
         <div class="q8 q8--btn m-parent">
           <p class="q8__title">ー middle ー</p>
-          <div class="m-common middle common-color">common</div>
-          <div class="m-error middle btn-error error-color">error</div>
-          <div class="m-disabled middle error-color disabled-color">disabled</div>
-          <div class="m-shadow middle error-color shadow-color">shadow</div>
+          <div class="middle common-color">common</div>
+          <div class="middle btn-error error-color">error</div>
+          <div class="middle error-color disabled-color">disabled</div>
+          <div class="middle error-color shadow-color">shadow</div>
         </div>
 
         <div class="q8 q8--btn l-parent">
           <p class="q8__title">ー large ー</p>
-          <div class="l-common large common-color">common</div>
-          <div class="l-error large error-color">error</div>
-          <div class="l-disabled large disabled-color">disabled</div>
-          <div class="l-shadow large shadow-color">shadow</div>
+          <div class="large common-color">common</div>
+          <div class="large error-color">error</div>
+          <div class="large disabled-color">disabled</div>
+          <div class="large shadow-color">shadow</div>
         </div>
         <!-- 回答はここに書いてね -->
       </div>
@@ -117,8 +117,8 @@
     <div class="q8">
       <form action="index.html" method="get">
         <div class="container">
-          <div class="form-title">
-            <h2>
+          <div class="form-title-contents">
+            <h2 class="form-title">
               <span>Form Exercise</span>
             </h2>
             <!-- <div class="title-line"></div> -->
@@ -128,7 +128,7 @@
             <div class="left">
               <div class="form-name">
                 <label for="name" id="name">名前</label>
-                <input type="text" id="name-input" name="name" required>
+                <input type="text" class="name-input" name="name" required>
               </div>
               <div class="gander">
                 <label id="label-gender">性別</label>
@@ -141,33 +141,36 @@
                   <span class="woman-text">女</span>
                 </label> -->
                 <div class="radio">
-                  <input id="radio-1" name="radio" type="radio" checked>
+
+                  <input type="radio" id="radio-1" name="radio" class="radio-input" checked>
                   <label for="radio-1" class="radio-label">男</label>
 
-                  <input type="radio" name="radio" class="radio-input" id="radio-01">
-                  <label for="radio-01">女</label><br>
+                  <input type="radio" name="radio" class="radio-input" id="radio-02">
+                  <label for="radio-02">女</label><br>
 
                 </div>
               </div>
               <div class="from">
                 <label id="label-from">出身</label>
-                <select class="from-select" name="from">
-                  <option value="東京">東京</option>
-                  <option value="埼玉">埼玉</option>
-                  <option value="千葉">千葉</option>
-                  <option value="神奈川">神奈川</option>
-                </select>
+                <div class="select-wrapper ">
+                  <select class="from-select" name="from">
+                    <option value="東京">東京</option>
+                    <option value="埼玉">埼玉</option>
+                    <option value="千葉">千葉</option>
+                    <option value="神奈川">神奈川</option>
+                  </select>
+                </div>
               </div>
               <div class="form-e-mail">
                 <label id="label-email">Eメール</label>
-                <input type="email" id="email-input" name="email" placeholder="ex)hoge@gmail.com" required>
+                <input type="email" class="email-input" name="email" placeholder="ex)hoge@gmail.com" required>
               </div>
               <div class="phone">
                 <label id="label-phone">電話番号</label>
-                <input type="tel" id="tel-input" name="tel" placeholder="ex)08012345678">
+                <input type="tel" class="tel-input" name="tel" placeholder="ex)08012345678">
               </div>
               <div class="form-age">
-                <input type="checkbox" name="sample1" id="test1" />
+                <input type="checkbox" class="age-checkbox" name="sample1" id="test1" />
                 <label for="test1">20歳以上です</label>
                 <!-- <input type="checkbox" id="age" name="age" value="true">20歳以上です -->
               </div>
@@ -176,7 +179,7 @@
               </div>
             </div>
             <div claas="right">
-              <textarea name="comment" placeholder=何かあれば入力してください。></textarea>
+              <textarea name="comment" class="comment" placeholder=何かあれば入力してください。></textarea>
             </div>
           </div>
         </div>

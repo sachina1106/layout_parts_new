@@ -61,12 +61,7 @@
   box-shadow: 0 1px 4px rgba(0, 0, 0, .12);
 }
 
-/* 親要素にflexをつける */
-.s-parent,
-.m-parent,
-.l-parent {
-  text-align: center;
-}
+
 
 .form-container {
   width: 700px;
@@ -80,7 +75,7 @@
   background-color: #ECF1F2;
   width: 700px;
   margin: 0 auto;
-  padding: 10px 20px 20px 5px;
+  padding: 20px;
   margin-bottom: 100px;
 }
 
@@ -101,23 +96,20 @@ textarea,
 }
 
 
-textarea {
-  font-size: 13px;
-  padding: 12px;
 
-}
 
 .inner-contents {
   display: flex;
+  justify-content: space-between;
 }
 
 
 .left {
-  width: 350px;
+  width: 300px;
 }
 
 .right {
-  width: 350px;
+  width: 300px;
 }
 
 .form-name,
@@ -142,9 +134,9 @@ textarea {
   text-align: right;
 }
 
-#name-input,
-#email-input,
-#tel-input,
+.name-input,
+.email-input,
+.tel-input,
 .from-select {
   width: 200px;
   margin-left: 20px;
@@ -155,12 +147,14 @@ textarea {
   width: 350px;
   height: 200px;
   resize: none;
+  box-sizing: border-box;
+  font-size: 13px;
+  padding: 12px;
 }
 
 
 .form-age {
   text-align: right;
-  margin-right: 36px;
 }
 
 .form-btn {
@@ -172,7 +166,6 @@ textarea {
 
 .btn {
   text-align: right;
-  margin-right: 38px;
   margin-top: 10px;
 }
 
@@ -196,24 +189,26 @@ textarea {
   margin-left: 10px;
 }
 
+.form-title-contents {
+  margin-top: 10px;
+}
 
-h2 {
+.form-title {
   overflow: hidden;
   text-align: left;
   font-size: 24px;
   margin-bottom: 20px;
-  margin-top: 10px;
   font-weight: 900;
 }
 
-h2 span {
+.form-title span {
   display: inline-block;
   padding: 0 0.5em;
   position: relative;
 }
 
 
-h2 span:after {
+.form-title span:after {
   border-top: 1px solid #ccc;
   ;
   content: "";
@@ -222,22 +217,22 @@ h2 span:after {
   width: 99em;
 }
 
-h2 span:before {
+.form-title span:before {
   right: 100%;
 }
 
-h2 span:after {
+.form-title span:after {
   left: 100%;
 }
 
 
-input[type=radio],
+.radio-input,
 input[type=checkbox] {
   display: inline-block;
   margin-right: 6px;
 }
 
-input[type=radio]+label,
+.radio-input+label,
 input[type=checkbox]+label {
   position: relative;
   display: inline-block;
@@ -246,74 +241,74 @@ input[type=checkbox]+label {
   cursor: pointer;
 }
 
-@media (min-width: 1px) {
 
-  input[type=radio],
-  input[type=checkbox] {
-    display: none;
-    margin: 0;
-  }
 
-  input[type=radio]+label,
-  input[type=checkbox]+label {
-    padding: 0 0 0 24px;
-  }
-
-  input[type=radio]+label::before,
-  input[type=checkbox]+label::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    display: block;
-    width: 18px;
-    height: 18px;
-    margin-top: -9px;
-    background-color: white;
-  }
-
-  input[type=radio]+label::before {
-    border: 1px solid #c2ced2;
-    border-radius: 30px;
-  }
-
-  input[type=checkbox]+label::before {
-    border: 1px solid #c2ced2;
-  }
-
-  input[type=radio]:checked+label::after,
-  input[type=checkbox]:checked+label::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    display: block;
-  }
-
-  input[type=radio]:checked+label::after {
-    left: 5px;
-    width: 8px;
-    height: 8px;
-    margin-top: -4px;
-    background: #00BCD4;
-    border-radius: 8px;
-  }
-
-  input[type=checkbox]:checked+label::after {
-    left: 3px;
-    width: 16px;
-    height: 8px;
-    margin-top: -8px;
-    border-left: 3px solid #00BCD4;
-    border-bottom: 3px solid #12b4eb;
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-  }
+.radio-input,
+input[type=checkbox] {
+  display: none;
+  margin: 0;
 }
+
+.radio-input+label,
+input[type=checkbox]+label {
+  padding: 0 0 0 24px;
+}
+
+input[type=radio]+label::before,
+input[type=checkbox]+label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  width: 18px;
+  height: 18px;
+  margin-top: -9px;
+  background-color: white;
+}
+
+input[type=radio]+label::before {
+  border: 1px solid #c2ced2;
+  border-radius: 30px;
+}
+
+input[type=checkbox]+label::before {
+  border: 1px solid #c2ced2;
+}
+
+input[type=radio]:checked+label::after,
+input[type=checkbox]:checked+label::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+}
+
+input[type=radio]:checked+label::after {
+  left: 5px;
+  width: 8px;
+  height: 8px;
+  margin-top: -4px;
+  background: #00BCD4;
+  border-radius: 8px;
+}
+
+input[type=checkbox]:checked+label::after {
+  left: 3px;
+  width: 16px;
+  height: 8px;
+  margin-top: -8px;
+  border-left: 3px solid #00BCD4;
+  border-bottom: 3px solid #12b4eb;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
 
 
 .radio-input {
@@ -338,10 +333,6 @@ input[type=checkbox]+label {
   border-radius: 50%;
 }
 
-/* .radio-input:checked+label {
-  color: #d01137;
-} */
-
 .radio-input:checked+label::after {
   content: "";
   display: block;
@@ -358,7 +349,7 @@ input[type=checkbox]+label {
   margin-left: 22px;
 }
 
-select::-ms-expand {
+.select-wrapper::-ms-expand {
   display: none;
 }
 
@@ -372,18 +363,41 @@ select {
   outline: none;
 }
 
-select::after {
+
+.select-wrapper::after {
   display: block;
   position: absolute;
   top: 4px;
   right: 10px;
   width: 8px;
   height: 8px;
-  border-right: 2px solid red !important;
-  border-bottom: 2px solid red !important;
+  border-right: 2px solid #E5E5E5;
+  border-bottom: 2px solid#E5E5E5;
   transform: rotate(45deg);
-  content: "あ";
+  content: "";
   pointer-events: none;
+}
+
+
+.select-wrapper {
+  position: relative;
+}
+
+
+.name-input:focus,
+.email-input:focus,
+.tel-input:focus,
+.comment:focus {
+  box-shadow: 0 0 7px #00BCD4;
+}
+
+.form-btn:active {
+  background-color: #FFF;
+  color: #00BCD4;
+}
+
+.form-btn:hover {
+  cursor: pointer;
 }
 
 /* 回答はここに書いてね */
