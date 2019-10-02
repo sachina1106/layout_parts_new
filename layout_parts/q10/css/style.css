@@ -9,9 +9,6 @@
 
 .balloon {
   position: relative;
-  display: inline-block;
-  margin: 1.5em 0;
-  padding: 7px 10px;
   min-width: 120px;
   max-width: 100%;
   color: #000;
@@ -29,7 +26,6 @@
   position: absolute;
   bottom: -24px;
   left: 9%;
-  margin-left: -18px;
   border: 15px solid transparent;
   border-top: 12px solid #FFF;
   z-index: 2;
@@ -41,15 +37,9 @@
   position: absolute;
   bottom: -30px;
   left: 9%;
-  margin-left: -17px;
   border: 14px solid transparent;
-  border-top: 11px solid #555;
+  border-top: 11px solid;
   z-index: 1;
-}
-
-.balloon p {
-  margin: 0;
-  padding: 0;
 }
 
 p {
