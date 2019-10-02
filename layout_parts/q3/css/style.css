@@ -1,11 +1,14 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
-.table,
-.table td,
-.table th {
+
+td,
+th {
   border: solid 1px #dedede;
   padding: 10px 0;
+}
+
+.table {
   table-layout: fixed;
   width: 100%;
 }
@@ -23,12 +26,11 @@
   line-height: 22px;
 }
 
-.table tr:nth-child(3),
-.table tr:nth-child(5) {
+.table tr:nth-child(2n+3) {
   background: #ecf1f2;
 }
 
-.table tr:nth-child(5) {
+.table tr:nth-last-child(2) {
   border-bottom: dashed 2px #000;
 }
 
