@@ -9,24 +9,28 @@
   box-sizing: border-box;
 }
 
-.first {
+.box-container {
   width: 100%;
   display: table;
   margin-bottom: 20px;
   text-align: center;
 }
 
-.second {
-  width: 100%;
-  display: table;
-  text-align: center;
+
+.box-container:last-child {
+  margin-bottom: 0;
 }
 
-.first div,
-.second div {
+.f-left,
+.f-center,
+.f-right,
+.s-left,
+.s-center,
+.s-right {
   display: table-cell;
   padding: 20px;
 }
+
 
 
 .f-left {
