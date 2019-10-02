@@ -5,12 +5,17 @@
   text-align: center !important;
 }
 
+.inline-box {
+  display: inline-block;
+}
+
 .inline-box p {
   display: inline-block;
   padding: 10px;
   background: #e6f2ff;
   width: 90px;
   box-sizing: border-box;
+  margin: 0 auto;
 
 }
 
@@ -66,6 +71,11 @@
   left: 50%;
   text-align: center;
   transform: translate(-50%, -50%);
+}
+
+
+.textarign {
+  text-align: center;
 }
 
 /* 回答はここに書いてね */
