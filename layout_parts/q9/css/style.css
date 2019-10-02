@@ -4,69 +4,59 @@
 
 
 .img-container {
+  overflow: hidden;
+  position: relative;
   width: 500px;
+  height: 333px;
   margin: 0 auto;
-
+  cursor: pointer;
 }
 
 .car-img {
-  overflow: hidden;
-  width: 500px;
-  position: relative;
-}
-
-.car-img img {
-  display: block;
-  transition-duration: 0.3s;
-}
-
-.car-img:hover img {
-  transform: scale(1.5);
-  transition-duration: 0.3s;
-  /* filter: brightness(0.5); */
-  /* opacity: 0.8; */
-}
-
-.car-img .img-text {
-  position: absolute;
-  bottom: -112px;
-  position: absolute;
-  width: 500px;
   transition: all .5s;
-  color: #fff;
-  font-size: 16px;
-  line-height: 16px;
-  margin-left: 5px;
+}
+
+.text-box {
+  position: absolute;
+  left: 0;
+  bottom: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .8));
+  transition: all .5s;
+}
+
+.img-container:hover .car-img {
+  transform: scale(1.5);
+}
+
+.img-container:hover .text-box {
+  bottom: 0;
+}
+
+.text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   padding: 20px;
+  color: #FFF;
   box-sizing: border-box;
   word-break: break-all;
 }
 
-/* 親要素がhoverした時その子要素につけるcss */
-.car-img:hover .img-text {
-  bottom: 0px;
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
-}
 
-.loader-container {
-  position: relative;
-  width: 100px;
+.loader {
+  /* position: absolute; */
   margin: 0 auto;
-  height: 300px;
-}
-
-#loader {
-  position: absolute;
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background: #ecf1f2;
+  /* background: #ecf1f2; */
   box-sizing: border-box;
-  border: 12px solid #00bcd4;
+  border: 10px solid #ECF1F2;
   /* 右,左、下の色を消す */
-  border-right-color: transparent;
-  border-left-color: transparent;
-  border-bottom-color: transparent;
+  border-top-color: #00bcd4;
   /* 一秒毎にくるくる回るアニメーション */
   animation: spin 1s linear infinite;
 }
@@ -88,6 +78,7 @@
   }
 }
 
+/*
 .circle-box {
   background: #fff;
   border-radius: 50%;
@@ -97,7 +88,7 @@
   position: absolute;
   left: 10px;
   box-sizing: border-box;
-}
+} */
 
 
 /* 回答はここに書いてね */
