@@ -132,8 +132,22 @@
               </div>
               <div class="gander">
                 <label id="label-gender">性別</label>
-                <input type="radio" name="man" value="1" id="man">男
-                <input type="radio" name="woman" value="2" id="woman">女
+                <!-- <label>
+                  <input type="radio" class="radio" name="man" value="1" id="man">
+                  <span class="man-text">男</span>
+                </label>
+                <label>
+                  <input type="radio" class="radio" name="woman" value="2" id="woman">
+                  <span class="woman-text">女</span>
+                </label> -->
+                <div class="radio">
+                  <input id="radio-1" name="radio" type="radio" checked>
+                  <label for="radio-1" class="radio-label">男</label>
+
+                  <input type="radio" name="radio" class="radio-input" id="radio-01">
+                  <label for="radio-01">女</label><br>
+
+                </div>
               </div>
               <div class="from">
                 <label id="label-from">出身</label>
@@ -146,14 +160,16 @@
               </div>
               <div class="form-e-mail">
                 <label id="label-email">Eメール</label>
-                <input type="email" id="email-input" name="email" required>
+                <input type="email" id="email-input" name="email" placeholder="ex)hoge@gmail.com" required>
               </div>
               <div class="phone">
                 <label id="label-phone">電話番号</label>
-                <input type="tel" id="tel-input" name="tel">
+                <input type="tel" id="tel-input" name="tel" placeholder="ex)08012345678">
               </div>
               <div class="form-age">
-                <input type="checkbox" id="age" name="age" value="true">20歳以上です
+                <input type="checkbox" name="sample1" id="test1" />
+                <label for="test1">20歳以上です</label>
+                <!-- <input type="checkbox" id="age" name="age" value="true">20歳以上です -->
               </div>
               <div class="btn">
                 <button type="submit" class="form-btn">送信</button>
