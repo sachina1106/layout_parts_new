@@ -11,7 +11,15 @@
   font-size: 28px;
 }
 
-.q5 div {
+.eight,
+.five,
+.one,
+.seven,
+.four,
+.six,
+.two,
+.three,
+.nine {
   height: 100px;
   width: 100px;
   line-height: 100px;
@@ -89,7 +97,7 @@
 
 .nine {
   background-color: #2B69A3;
-  position: fixed !important;
+  position: fixed;
   top: 10px;
   left: 10px;
 }
