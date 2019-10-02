@@ -25,30 +25,64 @@
 }
 
 /* Q2 css */
-.table-parent {
+/* .table-parent {
   display: table;
 }
 
-.table-left {
+.table-box {
+  display: table-cell;
+  vertical-align: middle;
+  width: 225px;
+}
+
+
+
+.table-text {
+  font-size: 16px;
+  padding: 10px;
+  background-color: #FFF;
+} */
+
+/* .table-left {
   display: table-cell;
   vertical-align: middle;
 }
 
 .table-right {
   display: table-cell;
+} */
+
+
+.table-parent {
+  width: 500px;
+  display: table;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
 }
 
-.mr-25 {
-  margin-right: 25px;
+.table-box {
+  vertical-align: middle;
+  display: table-cell;
+  padding-left: 50px;
+
 }
 
-.ml-25 {
-  margin-left: 25px;
+.table-box:first-child {
+  padding-left: 0;
+}
+
+.table-text {
+  font-size: 16px;
+}
+
+.table-text {
+  padding: 10px;
+  background: #fff;
 }
 
 /* Q3 css */
 .inline-parent {
-  text-align: center;
   font-size: 0;
 }
 
@@ -56,7 +90,12 @@
   display: inline-block;
   vertical-align: middle;
   width: 225px;
+  margin-right: 50px;
 
+}
+
+.inline-child:last-child {
+  margin-right: 0;
 }
 
 /* Q4 css */
@@ -88,6 +127,14 @@
   margin-left: 50px;
 }
 
+.float-box {
+  float: left;
+  margin-right: 50px;
 
+}
+
+.float-box:last-child {
+  margin-right: 0;
+}
 
 /* 回答はここに書いてね */
