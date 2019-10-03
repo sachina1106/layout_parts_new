@@ -37,7 +37,6 @@
   display: table-cell;
   padding-left: 50px;
   width: 225px;
-
 }
 
 .table-box:first-child {
@@ -63,7 +62,6 @@
   vertical-align: middle;
   width: 225px;
   margin-right: 50px;
-
 }
 
 .inline-child:last-child {
@@ -109,5 +107,4 @@
   margin-right: 0;
 }
 
-.table-box
 /* 回答はここに書いてね */
