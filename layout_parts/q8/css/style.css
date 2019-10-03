@@ -84,9 +84,6 @@ input,
 textarea,
 .form-btn {
   padding: 5px;
-  /* -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none; */
   border: none;
   outline: none;
   text-transform: none;
