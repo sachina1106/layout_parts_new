@@ -21,12 +21,7 @@
   margin-bottom: 0;
 }
 
-.f-left,
-.f-center,
-.f-right,
-.s-left,
-.s-center,
-.s-right {
+.common {
   display: table-cell;
   padding: 20px;
 }
