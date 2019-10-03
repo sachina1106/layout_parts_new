@@ -9,14 +9,21 @@
   display: inline-block;
 }
 
-.inline-box p {
+.aligh-text {
   display: inline-block;
   padding: 10px;
-  background: #e6f2ff;
-  width: 90px;
   box-sizing: border-box;
-  margin: 0 auto;
 
+}
+
+.margin-text {
+  padding: 10px 0;
+  margin: 0 auto;
+}
+
+.common {
+  background: #E6F2FF;
+  width: 90px;
 }
 
 .table-parent {
