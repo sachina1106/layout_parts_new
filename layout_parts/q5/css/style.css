@@ -11,15 +11,7 @@
   font-size: 28px;
 }
 
-.eight,
-.five,
-.one,
-.seven,
-.four,
-.six,
-.two,
-.three,
-.nine {
+.common {
   height: 100px;
   width: 100px;
   line-height: 100px;
